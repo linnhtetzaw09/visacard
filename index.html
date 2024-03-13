@@ -1,62 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <title>Visa Card</title>
-    <link href="./style.css" rel="stylesheet" type="text/css"/>
-</head>
-<body>
-
+    <link href="./style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
     <div class="container">
+      <div class="visacard">
+        <form action="" method="">
+          <div class="logo">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png"
+              class="visalogo"
+              alt="visalogo"
+            />
+          </div>
 
-        <div class="visacard">
+          <div class="card-number">
+            <label for="">Card Number</label>
+            <input
+              type="text"
+              name="card-digit"
+              id="card-digit"
+              class="form-control"
+              placeholder="1234 1234 1234 1234"
+              maxlength="20"
+              required
+            />
+            <span class="underlined"></span>
+          </div>
+          <br /><br />
 
-            <form action="" method="">
+          <div class="form-group">
+            <div class="card-holder">
+              <label for="">Card Holder Name</label>
+              <input
+                type="text"
+                name="card-name"
+                id="card-name"
+                class="form-control"
+                placeholder="Enter your fullname"
+                required
+              />
+              <span class="underlined"></span>
+            </div>
 
-                <div class="logo">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png" class="visalogo" alt="visalogo">
-                </div>
+            <div class="card-date">
+              <label for="">Exp Date</label>
+              <input
+                type="text"
+                name="card-exp"
+                id="card-exp"
+                class="form-control"
+                placeholder="12/31"
+                maxlength="5"
+                required
+              />
+              <span class="underlined"></span>
+            </div>
 
-                <div class="card-number">
-                    <label for="">Card Number</label>
-                    <input type="text" name="card-digit" id="card-digit" class="form-control" placeholder="1234 1234 1234 1234" maxlength="20" required>
-                    <span class="underlined"></span>
-                </div>
-                <br/><br/>
-
-                <div class="form-group">
-
-                    <div class="card-holder">
-                        <label for="">Card Hodler Name</label>
-                        <input type="text" name="card-name" id="card-name" class="form-control" placeholder="Enter your fullname"required>
-                        <span class="underlined"></span>
-                    </div>
-
-                    <div class="card-date">
-                        <label for="">Exp Date</label>
-                        <input type="text" name="card-exp" id="card-exp" class="form-control" placeholder="12/31" maxlength="5" required>
-                        <span class="underlined"></span>
-                    </div>
-
-                    <div class="card-ccv">
-                        <label for="">CCV</label>
-                        <input type="text" name="card-ccv" id="card-ccv" class="form-control" placeholder="135" maxlength="3" required>
-                        <span class="underlined"></span>
-                    </div>
-
-                </div>
-
-
-
-            </form>
-
-        </div>
-
-
+            <div class="card-ccv">
+              <label for="">CCV</label>
+              <input
+                type="text"
+                name="card-ccv"
+                id="card-ccv"
+                class="form-control"
+                placeholder="135"
+                maxlength="3"
+                required
+              />
+              <span class="underlined"></span>
+            </div>
+          </div>
+        </form>
+      </div>
     </div>
 
-
-
     <script src="./app.js" type="text/javascript"></script>
-    
-</body>
+  </body>
 </html>
